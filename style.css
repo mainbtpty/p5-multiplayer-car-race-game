@@ -50,8 +50,6 @@ h2, h3 {
   font-size: 16px;
   margin: 4px 2px;
   cursor: pointer;
-  -webkit-transition-duration: 0.4s; /* Safari */
-  transition-duration: 0.4s;
 }
 
 
@@ -62,11 +60,30 @@ h2, h3 {
   padding:15px;
   border-radius: 150px;
   cursor: pointer;
-  -webkit-transition-duration: 0.4s; /* Safari */
-  transition-duration: 0.4s;
 }
 
 
 .loginButton:hover {
   box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
 }
+
+
+/* Add mobile-friendly rules _/
+@media only screen and (max-width: 768px) {
+/_ Reduce font sizes for better readability _/
+h1 {
+font-size: 24px;
+}
+h2, h3 {
+font-size: 18px;
+}
+/_ Adjust button sizes for smaller screens */
+.customButton {
+  width: 150px;
+  height: 40px;
+  font-size: 14px;
+  }
+  .volumeButton {
+  width: 80px;
+  height: 80px;
+  } 
